@@ -13,4 +13,4 @@ class WriteState(Turtle):
         self.hideturtle()
         self.penup()
         self.goto(x, y)
-        self.write(arg=text, font=("Arial", 8, "bold"))
+        self.write(arg=text, align="center", font=("Arial", 8, "bold"))

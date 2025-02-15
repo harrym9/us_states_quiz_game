@@ -16,17 +16,18 @@ state_list = data["state"].to_list()
 ycor_list = data["y"].to_list()
 xcor_list = data["x"].to_list()
 
+guessed_list = []
+
 score = 0
 while score != 50:
     answer = screen.textinput(prompt="What's another state name?", title=f"{score}/50 States Correct").title()
+
     for index in range(len(state_list)):
+
         if answer == state_list[index]:
             score += 1
-            text = state_list[index]
-            x = xcor_list[index]
-            y = ycor_list[index]
-
-    write_state = WriteState(text, x, y)
+            guessed_list.append(state_list[index])
+            write_state = WriteState(state_list[index], xcor_list[index], ycor_list[index])
 
 screen.exitonclick()
 
