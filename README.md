@@ -53,6 +53,6 @@ pip install pandas PyQt5
 
 
 ## Contributors
-- [MYounesEG](https://github.com/MYounesEG) - Front-end development
 - [harrym9](https://github.com/harrym9/us_states_quiz_game/) - Back-end development
+- [MYounesEG](https://github.com/MYounesEG) - Front-end development and Readme.md editor
 
